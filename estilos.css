@@ -1,0 +1,116 @@
+*{
+    margin:10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.padre{
+display: flex;
+flex-flow: column nowrap;
+}
+
+.header{
+
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.Menu{
+    background:green;
+display:flex;
+flex-flow: row nowrap;
+height: 100px;
+align-items: center;
+
+}
+.logo{
+    background: coral;
+    flex:1 1 auto;
+height: 30px;
+
+}
+.nav{
+    background: darkblue;
+    flex:5 1 auto;
+    height: 30px;
+}
+.social{
+    background: crimson;
+    flex:1 1 auto;
+    height: 30px;
+}
+.text-principal{
+    background: darkkhaki;
+}
+H1{
+    background: darkseagreen;
+}
+
+
+
+
+
+.section{
+    background: #000;
+    display: flex;
+}
+.articulos{
+    background: dimgray;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.article{
+    background:fuchsia;
+    flex: 1 1 40%;
+}
+.navegacion{
+    background: honeydew;
+    flex:  1 1 100%;
+}
+.aside{
+    background: khaki;
+    flex: 1 1 auto;
+}
+.publicidad{
+    background:yellow;
+}
+
+
+.footer{
+    
+        background: #000;
+        display: flex;
+        justify-content: center;
+}
+.pie{
+    background: wheat;
+    width: 300px;
+    
+}
+
+
+@media all and (max-width:800px){
+    .section{
+        flex-direction: column;
+    }
+    .Menu{
+        flex-direction: column;
+        height: auto;
+
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media all and (max-width:600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+
+
+
